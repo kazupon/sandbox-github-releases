@@ -1,0 +1,26 @@
+{
+  "name": "sandbox-github-releases",
+  "version": "1.0.0",
+  "description": "This is github release sandbox",
+  "private": true,
+  "scripts": {
+    "start": "jiti ./bin/run.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kazupon/sandbox-github-releases.git"
+  },
+  "keywords": [],
+  "author": "kazupon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kazupon/sandbox-github-releases/issues"
+  },
+  "homepage": "https://github.com/kazupon/sandbox-github-releases#readme",
+  "dependencies": {
+    "jiti": "^1.14.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}
