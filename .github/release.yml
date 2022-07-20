@@ -11,6 +11,6 @@ changelog:
     - title: 🐞 Bug Fixes
       labels:
         - bug
-    - title: Others
+    - title: 🪄 Others
       labels:
         - chore
