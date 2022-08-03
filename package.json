@@ -1,6 +1,6 @@
 {
   "name": "sandbox-github-releases",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "description": "This is github release sandbox",
   "private": true,
   "scripts": {
