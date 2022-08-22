@@ -19,10 +19,15 @@ jobs:
         run: echo ${{ github.ref }}
         env:
           REF: ${{ github.ref }}
+      - uses: jungwinter/split@v2
+        id: split
+        with:
+          msg: ${{ github.ref }}
+          separator: '/'
       - name: Create Github Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh release create ${{ github.ref }} --generate-notes
+        run: gh release create ${{ steps.split.outputs._2 }} --generate-notes
       - name: Wait
         run: |
           # Wait for the github release
@@ -45,7 +50,7 @@ jobs:
         with:
           branch: main
           file_pattern: "*.md"
-          commit_message: "chore: generate changelog"
+          commit_message: "chore: ${{ steps.split.outputs._2 }}"
       - name: Publish
         run: |
           # npm publish
