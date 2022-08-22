@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "start": "tsx ./bin/run.ts",
+    "release": "bumpp --commit \"release: v%s\" --push --tag",
     "generate": "tsx ./scripts/generate.ts"
   },
   "repository": {
