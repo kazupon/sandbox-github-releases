@@ -50,7 +50,7 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           branch: main
-          file_pattern: "*.md"
+          file_pattern: "*.md *.json"
           commit_message: "release: ${{ steps.split.outputs._2 }}"
       - name: Publish
         run: |
