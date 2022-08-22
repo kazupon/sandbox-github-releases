@@ -46,11 +46,10 @@ jobs:
           ') - > .temp.txt
           rm CHANGELOG.md
           mv .temp.txt CHANGELOG.md
-          npm --no-git-tag-version version ${{ steps.split.outputs._2 }}
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           branch: main
-          file_pattern: "*.md *.json"
+          file_pattern: "*.md"
           commit_message: "chore: generate changelog"
       - name: Publish
         run: |
