@@ -20,7 +20,5 @@ jobs:
         run: echo ${{ github.ref }}
         env:
           REF: ${{ github.ref }}
-      - name: Show env
-        run: echo "${REF##*/}"
       - name: Create Github Release
         run: gh release create ${{ github.ref }} --draft --generate-notes
