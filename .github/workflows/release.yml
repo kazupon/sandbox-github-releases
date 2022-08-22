@@ -51,7 +51,7 @@ jobs:
         with:
           branch: main
           file_pattern: "*.md *.json"
-          commit_message: "release: ${{ steps.split.outputs._2 }}"
+          commit_message: "chore: generate changelog"
       - name: Publish
         run: |
           # npm publish
