@@ -27,7 +27,7 @@ jobs:
       - name: Wait
         run: |
           # Wait for the github release
-          sleep 3
+          sleep 10
       - name: Genearte changelog
         run: |
           gh release view --json createdAt,tagName,name,url,publishedAt,body --template \
