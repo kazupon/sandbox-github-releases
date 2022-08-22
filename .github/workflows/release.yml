@@ -21,4 +21,4 @@ jobs:
         env:
           REF: ${{ github.ref }}
       - name: Create Github Release
-        run: gh release create ${{ github.ref }} --draft --generate-notes
+        run: gh release create ${{ github.ref }} --generate-notes
