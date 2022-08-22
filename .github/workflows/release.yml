@@ -20,6 +20,8 @@ jobs:
         env:
           REF: ${{ github.ref }}
       - name: Create Github Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh release create ${{ github.ref }} --generate-notes
       - name: Wait
         run: |
