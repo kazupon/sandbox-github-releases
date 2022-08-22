@@ -4,7 +4,7 @@
   "description": "This is github release sandbox",
   "private": true,
   "scripts": {
-    "start": "jiti ./bin/run.ts"
+    "start": "tsx ./bin/run.ts"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/kazupon/sandbox-github-releases#readme",
   "dependencies": {
-    "jiti": "^1.14.0"
+    "tsx": "^3.8.2"
   },
   "devDependencies": {
     "typescript": "^4.7.4"
