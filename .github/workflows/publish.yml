@@ -13,6 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
       - name: Genearte changelog
         run: |
           gh release view --json createdAt,tagName,name,url,publishedAt,body --template \
@@ -22,12 +24,12 @@ jobs:
 
           {{ .body }}' > ./CHANGELOG.md
       - name: Check content
-        run: echo ./CHANGELOG.md
-      - name: Commit changelog
-        run: |
-          git add ./CHANGELOG.md
-          git commit -m "chore: generate changelog"
-          git push origin
+        run: cat ./CHANGELOG.md
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          branch: main
+          file_pattern: "*.md"
+          commit_message: "chore: generate changelog"
       - name: Publish
         run: |
           # npm publish
