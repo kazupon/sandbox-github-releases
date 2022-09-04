@@ -65,7 +65,7 @@
   description: Welcome to Pull Request
   color: '2E7733'
 - name: 'status: review needed'
-  description: 'Request for review comments'
+  description: Request for review
   color: 'fbca04'
 - name: 'status: need more repro codes or info'
   description: Lacks enough info to make progress
