@@ -65,5 +65,5 @@
   description: Welcome to Pull Request
   color: '2E7733'
 - name: 'status: need more info or reproduction codes'
-  description": Lacks enough info to make progress
+  description: Lacks enough info to make progress
   color: 'F9C90A'
