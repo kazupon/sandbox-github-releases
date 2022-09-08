@@ -1,10 +1,10 @@
 {
   "name": "@kazupon/sandbox-github-releases",
-  "version": "0.6.1",
+  "version": "0.6.0",
   "description": "This is github release sandbox",
   "private": true,
   "scripts": {
-    "release": "bumpp --commit \"release: v%s\" --tag \"**/pacakges.json\""
+    "release": "bumpp --tag --push \"**/pacakges.json\""
   },
   "repository": {
     "type": "git",
