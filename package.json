@@ -4,7 +4,7 @@
   "description": "This is github release sandbox",
   "private": true,
   "scripts": {
-    "release": "bumpp **/package.json --commit \"release: v\" --push --tag"
+    "release": "bumpp package.json packages/**/package.json --commit \"release: v\" --push --tag"
   },
   "repository": {
     "type": "git",
