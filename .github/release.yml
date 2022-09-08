@@ -41,7 +41,7 @@ changelog:
         - i18n
     - title: Package1
       labels:
-        - 'package: package1'
+        - package1
     - title: 🪄 Others
       labels:
         - chore
