@@ -4,7 +4,7 @@
   "description": "This is github release sandbox",
   "private": true,
   "scripts": {
-    "release": "bumpp --commit \"release: v%s\" **/pacakges.json"
+    "release": "bumpp --commit \"release: v%s\" --tag \"**/pacakges.json\""
   },
   "repository": {
     "type": "git",
