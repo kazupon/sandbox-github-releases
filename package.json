@@ -4,6 +4,7 @@
   "description": "This is github release sandbox",
   "private": true,
   "scripts": {
+    "build": "pnpm --filter @kazupon/** build",
     "release": "bumpp package.json packages/**/package.json --commit \"release: v\" --push --tag"
   },
   "repository": {

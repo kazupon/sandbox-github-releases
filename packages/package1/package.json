@@ -4,7 +4,8 @@
   "description": "This is github release sandbox for package1",
   "private": true,
   "scripts": {
-    "start": "tsx ./bin/run.ts"
+    "start": "tsx ./bin/run.ts",
+    "build": "echo 'build package1 !'"
   },
   "repository": {
     "type": "git",
