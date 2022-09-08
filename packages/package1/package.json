@@ -1,6 +1,6 @@
 {
   "name": "@kazupon/sandbox-package1",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "This is github release sandbox for package1",
   "private": true,
   "scripts": {
