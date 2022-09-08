@@ -1,6 +1,6 @@
 {
   "name": "@kazupon/sandbox-github-releases",
-  "version": "0.6.1",
+  "version": "0.6.0",
   "description": "This is github release sandbox",
   "private": true,
   "scripts": {
