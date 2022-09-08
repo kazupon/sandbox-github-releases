@@ -70,3 +70,6 @@
 - name: 'status: need more repro codes or info'
   description: Lacks enough info to make progress
   color: 'F9C90A'
+- name: 'package: package1'
+  description: package1
+  color: 'd4c5f9'
